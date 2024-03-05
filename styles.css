@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+body {
+	height: 100svh;
+	width: 100svw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#factDiv {
+	background-color: #d9dddc;
+	width: 100%;
+	min-height: 30%;
+	height: max-content;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#theFact {
+	font-size: 3rem;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+	color: black;
+	text-wrap: wrap;
+}
+
+#theSource {
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 1rem;
+	color: black;
+	font-weight: 900;
+}
+
+#theSource:hover {
+	color: red;
+}
+
+#theRefresh {
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	color: black;
+	font-weight: 900;
+}
+
+#theRefresh:hover {
+	color: red;
+}

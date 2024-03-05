@@ -5,6 +5,7 @@
 }
 
 body {
+	box-sizing: border-box;
 	height: 100svh;
 	width: 100svw;
 	display: flex;
@@ -14,6 +15,8 @@ body {
 }
 
 #factDiv {
+	box-sizing: border-box;
+	padding: 2rem;
 	background-color: #d9dddc;
 	width: 100%;
 	min-height: 30%;
@@ -41,6 +44,7 @@ body {
 	padding: 1rem;
 	color: black;
 	font-weight: 900;
+	font-size: 1rem;
 }
 
 #theSource:hover {
@@ -48,13 +52,15 @@ body {
 }
 
 #theRefresh {
-	text-decoration: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	padding: 1rem;
 	color: black;
 	font-weight: 900;
+	border: none;
+	background: none;
+	font-size: 1rem;
 }
 
 #theRefresh:hover {

@@ -13,7 +13,6 @@ async function getFact() {
 
 getFact();
 
-theRefresh.addEventListener('click', (e) => {
-	e.preventDefault;
+theRefresh.addEventListener('click', () => {
 	getFact();
 });

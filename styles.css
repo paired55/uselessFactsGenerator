@@ -57,14 +57,4 @@ body {
 		height: 100svh;
 		width: 100svw;
 	}
-
-	#theFact {
-		font-size: 1rem;
-		overflow: auto;
-	}
-
-	#theRefresh {
-		font-size: 0.5rem;
-		padding: 0.4rem;
-	}
 }

@@ -3,12 +3,12 @@ const theSource = document.querySelector('#theSource');
 const theRefresh = document.querySelector('#theRefresh');
 
 async function getFact() {
-	const fact = await fetch('https://uselessfacts.jsph.pl/api/v2/facts/random', {
-		mode: 'cors',
-	});
+	const fact = await fetch(
+		'https://api.api-ninjas.com/v1/facts?x-api-key=u8D7Slefknohi6oVloV3hQ==LVOfgylhdLlVPaOY',
+		{ mode: 'cors' }
+	);
 	const response = await fact.json();
-	theFact.textContent = response.text;
-	theSource.href = response.source_url;
+	theFact.textContent = response['0']['fact'];
 }
 
 getFact();

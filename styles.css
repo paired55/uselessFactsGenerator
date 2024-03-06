@@ -36,25 +36,10 @@ body {
 	text-wrap: wrap;
 }
 
-#theSource {
-	text-decoration: none;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding: 1rem;
-	color: black;
-	font-weight: 900;
-	font-size: 1rem;
-}
-
-#theSource:hover {
-	color: red;
-}
-
 #theRefresh {
 	position: absolute;
 	bottom: 0;
-	left: 0;
+	right: 0;
 	padding: 1rem;
 	color: black;
 	font-weight: 900;
@@ -65,4 +50,21 @@ body {
 
 #theRefresh:hover {
 	color: red;
+}
+
+@media only screen and (max-device-width: 767px) {
+	#factDiv {
+		height: 100svh;
+		width: 100svw;
+	}
+
+	#theFact {
+		font-size: 1rem;
+		overflow: auto;
+	}
+
+	#theRefresh {
+		font-size: 0.5rem;
+		padding: 0.4rem;
+	}
 }
